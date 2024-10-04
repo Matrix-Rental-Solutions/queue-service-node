@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "@devslane/queue-service-node@1.0.21",
+      "/home/ubuntu/app/matrix-be"
+    ]
+  ],
+  "_from": "@devslane/queue-service-node@1.0.21",
+  "_id": "@devslane/queue-service-node@1.0.21",
+  "_inBundle": false,
+  "_integrity": "sha512-4/BHps/Nanq/GyxTDy+GIT0CFBYT3+JgPbsrsFcefuxKiVv/DabJ10OOcq4TVc/efRdToOXZflKqfNXtFDNHiQ==",
+  "_location": "/@devslane/queue-service-node",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@devslane/queue-service-node@1.0.21",
+    "name": "@devslane/queue-service-node",
+    "escapedName": "@devslane%2fqueue-service-node",
+    "scope": "@devslane",
+    "rawSpec": "1.0.21",
+    "saveSpec": null,
+    "fetchSpec": "1.0.21"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.devslane.com/@devslane%2fqueue-service-node/-/queue-service-node-1.0.21.tgz",
+  "_spec": "1.0.21",
+  "_where": "/home/ubuntu/app/matrix-be",
+  "author": {
+    "name": "Piyush Mishra"
+  },
+  "dependencies": {
+    "@types/bull": "^3.5.11",
+    "bull": "^3.7.0"
+  },
+  "description": "Queue Service for node applications",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.13.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.2.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "doc": "docs",
+    "test": "test"
+  },
+  "keywords": [
+    "node",
+    "redis",
+    "service",
+    "helper"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@devslane/queue-service-node",
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "build-ts": "tsc",
+    "docs": "typedoc --out docs lib",
+    "prepare": "npm run build && npm run test",
+    "test": "jest --coverage",
+    "test:jest": "jest",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "types": "index.d.ts",
+  "version": "1.0.21"
+}
